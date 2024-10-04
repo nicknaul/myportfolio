@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en" style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths desktop portrait">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Nicko Chel Naul Portfolio</title>  
+    <meta name="keywords" content="Data Science, US 2022 Survey of Consumer Finances - An Interactive Chart, Data Analyst, K-Means CLustering, Python">
+    <meta name="description" content="Portfolio for Data Science, Data Analyst">
+    <meta name="author" content="Nicko Chel Naul">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.jpg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+<style>
+
+
+.box123 {
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button123 {
+  font-size: 1em;
+  padding: 10px;
+  color: black;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button123:hover {
+  background: #06D85F;
+}
+
+.overlay123 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+
+}
+.overlay123:target {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+.popup123 {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 75%;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+
+.popup123 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup123 .close123 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup123 .close123:hover {
+  color: #06D85F;
+}
+.popup123 .content123 {
+  max-height: 30%;
+  overflow: auto;
+	position: relative;
+z-index:1000;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+</style>
+
+</head>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <!<div id="preloader">
+      <!  <div id="main-ld">
+	<!		<div id="loader"></div>  
+	<!	</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a  href="#page-top" class="navbar-brand js-scroll-trigger" style="font-weight: bold; color:white;font-size:40px;font-family:Lucida Fax;" href="#page-top">nicko.chel.naul
+			
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Nick</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+           
+	   <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+	
+	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
+		<div class="heading">
+			<h1>hello,  I'm Nick</h1>
+			<p>I am highly flexible and adaptable when it comes to different projects and freelance work.</p>
+			<h3 class="cd-headline clip is-full-width">
+				<span>I can be your </span>
+				<span class="cd-words-wrapper">
+					<b class="is-visible">Data Analyst.</b>
+					<b>Data Scientist.</b>
+					<b>Python Programmer.</b>
+					<b>Amazon Data Specialist.</b>
+				</span>
+			</h3>
+		</div>
+	</section>
+
+	<svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 85 100" preserveAspectRatio="none">
+        <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+        </path>
+    </svg>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2>About Nick.</h2>
+                        <p> Nick is currently studying Applied Data Science Lab at WorldQuant University. He created multiple data science projects as part of the coursework of the program.  He was a Specialist for Data Management/Collection for Texts(MS EXCEL) on a third-party seller of Amazon.com which includes product listings and brand management; and a Data Annotator for Visuals (AI Image/ LIDAR Annotation) for machine learning on an online crowdsourcing platform.</p>
+						<p>A graduate of Brokenshire College of Davao, Philippines with degree of Bachelor of Science in Computer Science.</p>
+
+                       <! <a href="#" class="sim-btn btn-hover-new" data-text="Download CV"><span>Note: will send CV upon request.</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6" style="max-width:22%">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
+			
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Services</h3>
+                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
+            </div><!-- end title -->
+
+            <div class="row">
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-seo"></i>
+						</div>
+						<h2>Web Development</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-development"></i>
+						</div>
+						<h2>Responsive Design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-process"></i>
+						</div>
+						<h2>Creative Design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-discuss-issue"></i>
+						</div>
+						<h2>Support</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea"></i>
+						</div>
+						<h2>Web Idea</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea-1"></i>
+						</div>
+						<h2>Graphic Design</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div id="portfolio" class="section lb">
+		
+		<div class="container">
+			<div class="section-title text-left">
+                <h3>Portfolio</h3>
+		
+                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
+            </div><!-- end title -->
+			
+			<div class="gallery-menu row">
+				<div class="col-md-12">
+					<div class="button-group filter-button-group text-left">
+						<button class="active" data-filter="*">All</button>
+						<button data-filter=".gal_a">Web Development</button>
+						<button data-filter=".gal_b">Creative Design</button>
+						<button data-filter=".gal_c">Graphic Design</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="gallery-list row">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b" > 
+					<div class="gallery-single fix" >
+						<div class="box123">
+	<a class="button123" href="#popup1">Consumer Segmentation</a>
+</div>
+
+<div id="popup1" class="overlay123">
+	<div class="popup123">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<iframe src="https://nickonaul.pythonanywhere.com/page-5?v=1" title="Bankruptcy Prediction in Poland Project" width="100%" height="800"></iframe>
+		</div>
+	</div>
+</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+					<div id="popup1" class="overlay123">
+	<div class="popup123">
+		<a class="close123" href="#">&times;</a>
+		<div class="content123">
+			<iframe src="https://nickonaul.pythonanywhere.com/page-5?v=1" title="Bankruptcy Prediction in Poland Project" width="100%" height="800"></iframe>
+		</div>
+	</div>
+</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="background-color: transparent;"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="background-color: transparent;"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="background-color: transparent;"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
+					<div class="gallery-single fix">
+						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="background-color: transparent;"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- end section -->
+	
+
+    <div id="contact" class="section db">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Need Help With Your Business Or Project?</h3>
+                <p>Get in touch: nickocnaul@gmail.com<br>Or send me a message: <a href="https://www.linkedin.com/in/nicko-chel-naul-11792a312/" style="color:white" target="_blank">@linkedin</a>
+		</p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="form-group">
+										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+										<p class="help-block text-danger"></p>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="col-lg-12 text-center">
+									<div id="success"></div>
+									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
+								</div>
+							</div>
+						</form>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius">↑<i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/headline.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
+
+</body>
+</html>
